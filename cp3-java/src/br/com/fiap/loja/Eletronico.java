@@ -1,6 +1,6 @@
 package br.com.fiap.loja;
 
-class Eletronico extends Produto {
+public class Eletronico extends Produto {
     private String categoria;
     private String fabricante;
 

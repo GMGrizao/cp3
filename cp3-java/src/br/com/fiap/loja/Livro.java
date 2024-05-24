@@ -1,6 +1,6 @@
 package br.com.fiap.loja;
 
-class Livro extends Produto {
+public class Livro extends Produto {
     private String autor;
     private String editora;
 

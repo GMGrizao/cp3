@@ -18,12 +18,12 @@ public class Main {
         // Aplicando descontos para o livro
         String cupomLivro = JOptionPane.showInputDialog(null, "Insira o código de desconto para o livro: ");
         double precoComDescontoLivro = livro.calcularDescontoPorCupom(cupomLivro);
-        JOptionPane.showMessageDialog(null, "Preço do br.com.fiap.loja.Livro com desconto por cupom: " + precoComDescontoLivro);
+        JOptionPane.showMessageDialog(null, "Preço do Livro com desconto por cupom: " + precoComDescontoLivro);
 
         int resposta = JOptionPane.showConfirmDialog(null, "Deseja aplicar o desconto padrão?", "Desconto Padrão", JOptionPane.YES_NO_OPTION);
         if (resposta == JOptionPane.YES_OPTION) {
             precoComDescontoLivro = livro.calcularDescontoPadrao();
-            JOptionPane.showMessageDialog(null, "Preço do br.com.fiap.loja.Livro com desconto padrão: " + precoComDescontoLivro);
+            JOptionPane.showMessageDialog(null, "Preço do Livro com desconto padrão: " + precoComDescontoLivro);
         }
 
         resposta = JOptionPane.showConfirmDialog(null, "Deseja aplicar um desconto por porcentagem?", "Desconto Por Porcentagem", JOptionPane.YES_NO_OPTION);
@@ -31,7 +31,7 @@ public class Main {
             String porcentagemStr = JOptionPane.showInputDialog(null, "Informe a porcentagem de desconto: ");
             double porcentagemDescontoLivro = Double.parseDouble(porcentagemStr);
             precoComDescontoLivro = livro.calcularDescontoPorPorcentagem(porcentagemDescontoLivro);
-            JOptionPane.showMessageDialog(null, "Preço do br.com.fiap.loja.Livro com " + porcentagemDescontoLivro + "% de desconto: " + precoComDescontoLivro);
+            JOptionPane.showMessageDialog(null, "Preço do Livro com " + porcentagemDescontoLivro + "% de desconto: " + precoComDescontoLivro);
         }
 
         //Exibindo informações do eletrônico
